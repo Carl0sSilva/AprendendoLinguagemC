@@ -11,3 +11,23 @@ char conceito(double nota) {
     return 'A';
   }
 }
+
+int fatorial(int n) {
+
+  int r = 0, a = 0;
+
+  if (n == 0) {
+    n = 1;
+  } else {
+    a = n - 1;
+
+    while (a != 0) {
+
+      n = n * a;
+
+      a--;
+    }
+  }
+
+  return n;
+}
