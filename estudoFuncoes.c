@@ -45,3 +45,16 @@ int potencia(int b, int e) {
 
   return r;
 }
+
+int idadeEmDias(int a, int m, int d) {
+
+  int r = 0;
+
+  if (m > 12 || d > 30) {
+    r = -1;
+  } else {
+    r = (a * 365) + (m * 30) + d;
+  }
+
+  return r;
+}
