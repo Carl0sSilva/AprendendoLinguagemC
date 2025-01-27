@@ -31,3 +31,17 @@ int fatorial(int n) {
 
   return n;
 }
+
+int potencia(int b, int e) {
+  int r = b;
+
+  if (e == 0) {
+    r = 1;
+  } else
+    while (e != 1) {
+      r = b * r;
+      e--;
+    }
+
+  return r;
+}
